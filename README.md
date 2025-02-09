@@ -32,6 +32,7 @@ We will collect data from the following sources:
 - **Line Plot**: To visualize the number of flights delayed for each month in the year 2024 for a specific airport.
 - **Pie Chart**: To visualize the percentage of flights delayed vs. flights on time for 2024.
 - **Climate Graphs**: To show the average temperature and amount of precipitation during each month.
+- Example Visualization: ![image](https://github.com/user-attachments/assets/ecd6039c-dbde-4e49-9189-18cd90b2a53f)
 
 ## Test Plan
 1. Process the data to remove inconsistencies (e.g., filter flights to the specific airport).
