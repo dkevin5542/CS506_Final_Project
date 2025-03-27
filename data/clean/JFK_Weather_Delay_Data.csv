@@ -1,0 +1,104 @@
+year,month,carrier,carrier_name,airport,airport_name,arr_flights,arr_del15,carrier_ct,weather_ct,nas_ct,security_ct,late_aircraft_ct,arr_cancelled,arr_diverted,arr_delay,carrier_delay,weather_delay,nas_delay,security_delay,late_aircraft_delay
+2024,12,OO,SkyWest Airlines Inc.,JFK,"New York, NY: John F. Kennedy International",201.0,47.0,28.09,6.83,12.08,0.0,0.0,2.0,0.0,5089.0,3307.0,634.0,1148.0,0.0,0.0
+2024,12,9E,Endeavor Air Inc.,JFK,"New York, NY: John F. Kennedy International",1004.0,232.0,56.29,10.58,92.18,0.0,72.95,4.0,0.0,20067.0,4901.0,1333.0,6394.0,0.0,7439.0
+2024,12,AA,American Airlines Network,JFK,"New York, NY: John F. Kennedy International",1155.0,258.0,70.5,5.37,94.54,1.24,86.36,2.0,2.0,22404.0,6889.0,374.0,5933.0,37.0,9171.0
+2024,12,AS,Alaska Airlines Network,JFK,"New York, NY: John F. Kennedy International",356.0,105.0,18.7,5.69,55.07,0.0,25.54,1.0,0.0,5740.0,1437.0,376.0,2304.0,0.0,1623.0
+2024,12,B6,JetBlue Airways,JFK,"New York, NY: John F. Kennedy International",3142.0,887.0,289.74,3.37,245.13,0.03,348.72,33.0,5.0,70865.0,22955.0,442.0,12582.0,3.0,34883.0
+2024,12,DL,Delta Air Lines Network,JFK,"New York, NY: John F. Kennedy International",2575.0,576.0,201.1,8.55,218.58,1.64,146.13,1.0,2.0,42690.0,18362.0,2435.0,9981.0,178.0,11734.0
+2024,12,F9,Frontier Airlines,JFK,"New York, NY: John F. Kennedy International",186.0,51.0,19.24,1.26,21.39,0.0,9.11,0.0,0.0,2176.0,1046.0,89.0,625.0,0.0,416.0
+2024,12,HA,Hawaiian Airlines Network,JFK,"New York, NY: John F. Kennedy International",31.0,18.0,17.19,0.0,0.0,0.0,0.81,0.0,0.0,691.0,656.0,0.0,0.0,0.0,35.0
+2024,12,YX,Republic Airline,JFK,"New York, NY: John F. Kennedy International",1621.0,357.0,86.05,13.87,177.89,1.0,78.19,9.0,1.0,22733.0,5734.0,907.0,10517.0,19.0,5556.0
+2024,11,9E,Endeavor Air Inc.,JFK,"New York, NY: John F. Kennedy International",1213.0,91.0,20.6,5.82,41.07,0.0,23.51,0.0,1.0,4999.0,1265.0,357.0,2032.0,0.0,1345.0
+2024,11,AA,American Airlines Network,JFK,"New York, NY: John F. Kennedy International",1169.0,155.0,65.58,0.55,37.25,0.56,51.06,5.0,2.0,10475.0,4247.0,38.0,1533.0,9.0,4648.0
+2024,11,AS,Alaska Airlines Network,JFK,"New York, NY: John F. Kennedy International",331.0,43.0,13.29,0.0,18.4,1.0,10.31,1.0,0.0,2105.0,761.0,0.0,882.0,46.0,416.0
+2024,11,B6,JetBlue Airways,JFK,"New York, NY: John F. Kennedy International",2884.0,437.0,202.31,1.7,100.56,1.83,130.61,0.0,3.0,28765.0,14724.0,56.0,3596.0,29.0,10360.0
+2024,11,DL,Delta Air Lines Network,JFK,"New York, NY: John F. Kennedy International",2497.0,247.0,96.41,5.0,72.45,1.0,72.14,1.0,1.0,17226.0,8809.0,818.0,2803.0,17.0,4779.0
+2024,11,F9,Frontier Airlines,JFK,"New York, NY: John F. Kennedy International",180.0,27.0,11.18,0.0,5.67,0.0,10.15,0.0,0.0,1292.0,414.0,0.0,147.0,0.0,731.0
+2024,11,HA,Hawaiian Airlines Network,JFK,"New York, NY: John F. Kennedy International",30.0,12.0,11.95,0.0,0.0,0.0,0.05,0.0,0.0,556.0,555.0,0.0,0.0,0.0,1.0
+2024,11,OO,SkyWest Airlines Inc.,JFK,"New York, NY: John F. Kennedy International",222.0,34.0,19.43,8.05,6.52,0.0,0.0,0.0,0.0,1618.0,930.0,361.0,327.0,0.0,0.0
+2024,11,YX,Republic Airline,JFK,"New York, NY: John F. Kennedy International",1615.0,153.0,59.18,2.07,67.98,0.0,23.77,0.0,0.0,7699.0,3362.0,128.0,2504.0,0.0,1705.0
+2024,10,OO,SkyWest Airlines Inc.,JFK,"New York, NY: John F. Kennedy International",283.0,28.0,21.17,3.94,2.89,0.0,0.0,0.0,0.0,1593.0,1360.0,161.0,72.0,0.0,0.0
+2024,10,YX,Republic Airline,JFK,"New York, NY: John F. Kennedy International",1610.0,136.0,41.32,6.21,65.25,0.0,23.23,0.0,0.0,6714.0,3131.0,401.0,1805.0,0.0,1377.0
+2024,10,9E,Endeavor Air Inc.,JFK,"New York, NY: John F. Kennedy International",1488.0,117.0,46.44,4.11,33.49,0.0,32.96,0.0,0.0,8719.0,4774.0,407.0,1058.0,0.0,2480.0
+2024,10,AA,American Airlines Network,JFK,"New York, NY: John F. Kennedy International",1280.0,184.0,78.37,1.09,58.16,0.0,46.38,3.0,0.0,10615.0,4335.0,52.0,1630.0,0.0,4598.0
+2024,10,AS,Alaska Airlines Network,JFK,"New York, NY: John F. Kennedy International",287.0,64.0,8.03,0.0,43.41,0.09,12.47,1.0,0.0,2064.0,280.0,0.0,1253.0,3.0,528.0
+2024,10,B6,JetBlue Airways,JFK,"New York, NY: John F. Kennedy International",2981.0,427.0,203.93,2.39,95.44,0.87,124.37,44.0,1.0,27781.0,15806.0,252.0,2950.0,76.0,8697.0
+2024,10,DL,Delta Air Lines Network,JFK,"New York, NY: John F. Kennedy International",2632.0,337.0,118.03,2.22,131.7,0.65,84.4,23.0,5.0,23592.0,12047.0,258.0,3469.0,80.0,7738.0
+2024,10,F9,Frontier Airlines,JFK,"New York, NY: John F. Kennedy International",134.0,18.0,10.86,0.0,3.28,0.0,3.86,1.0,0.0,1218.0,804.0,0.0,93.0,0.0,321.0
+2024,10,HA,Hawaiian Airlines Network,JFK,"New York, NY: John F. Kennedy International",31.0,11.0,10.0,0.0,0.0,0.0,1.0,0.0,0.0,478.0,454.0,0.0,0.0,0.0,24.0
+2024,9,9E,Endeavor Air Inc.,JFK,"New York, NY: John F. Kennedy International",1411.0,148.0,53.07,1.67,51.96,0.0,41.3,3.0,0.0,11972.0,5216.0,541.0,2997.0,0.0,3218.0
+2024,9,AA,American Airlines Network,JFK,"New York, NY: John F. Kennedy International",1218.0,186.0,63.51,8.39,67.4,0.13,46.58,3.0,3.0,18987.0,10438.0,769.0,2258.0,4.0,5518.0
+2024,9,AS,Alaska Airlines Network,JFK,"New York, NY: John F. Kennedy International",299.0,71.0,22.55,0.0,40.16,1.0,7.29,0.0,0.0,2772.0,1437.0,0.0,1047.0,35.0,253.0
+2024,9,B6,JetBlue Airways,JFK,"New York, NY: John F. Kennedy International",2890.0,513.0,224.62,4.49,120.78,1.46,161.65,13.0,7.0,39411.0,21791.0,251.0,4224.0,56.0,13089.0
+2024,9,DL,Delta Air Lines Network,JFK,"New York, NY: John F. Kennedy International",2539.0,351.0,121.39,6.34,125.2,0.0,98.06,8.0,3.0,24465.0,12329.0,296.0,4342.0,0.0,7498.0
+2024,9,F9,Frontier Airlines,JFK,"New York, NY: John F. Kennedy International",118.0,17.0,8.97,0.0,2.17,0.0,5.86,1.0,0.0,1390.0,807.0,0.0,67.0,0.0,516.0
+2024,9,HA,Hawaiian Airlines Network,JFK,"New York, NY: John F. Kennedy International",30.0,7.0,6.08,0.0,0.0,0.0,0.92,0.0,0.0,203.0,167.0,0.0,0.0,0.0,36.0
+2024,9,OO,SkyWest Airlines Inc.,JFK,"New York, NY: John F. Kennedy International",284.0,29.0,16.72,8.2,4.08,0.0,0.0,0.0,0.0,1724.0,1071.0,418.0,235.0,0.0,0.0
+2024,9,YX,Republic Airline,JFK,"New York, NY: John F. Kennedy International",1571.0,174.0,40.08,8.09,86.85,0.0,38.98,1.0,1.0,10398.0,2312.0,916.0,3579.0,0.0,3591.0
+2024,8,9E,Endeavor Air Inc.,JFK,"New York, NY: John F. Kennedy International",1612.0,336.0,79.74,15.98,129.22,0.0,111.06,186.0,1.0,35247.0,9912.0,3655.0,11824.0,0.0,9856.0
+2024,8,AA,American Airlines Network,JFK,"New York, NY: John F. Kennedy International",1189.0,325.0,74.95,20.01,121.96,0.82,107.25,63.0,12.0,28268.0,6300.0,4012.0,6913.0,80.0,10963.0
+2024,8,AS,Alaska Airlines Network,JFK,"New York, NY: John F. Kennedy International",346.0,112.0,25.22,8.11,61.24,0.04,17.39,6.0,2.0,7409.0,1109.0,1105.0,4082.0,6.0,1107.0
+2024,8,B6,JetBlue Airways,JFK,"New York, NY: John F. Kennedy International",3218.0,1067.0,315.58,25.18,262.17,1.99,462.08,216.0,18.0,113727.0,42530.0,2120.0,21859.0,131.0,47087.0
+2024,8,DL,Delta Air Lines Network,JFK,"New York, NY: John F. Kennedy International",2610.0,665.0,188.52,27.28,273.13,0.41,175.65,75.0,25.0,60459.0,22049.0,2646.0,19565.0,33.0,16166.0
+2024,8,F9,Frontier Airlines,JFK,"New York, NY: John F. Kennedy International",100.0,24.0,13.73,0.79,1.71,0.0,7.76,3.0,0.0,1696.0,1064.0,50.0,68.0,0.0,514.0
+2024,8,HA,Hawaiian Airlines Network,JFK,"New York, NY: John F. Kennedy International",31.0,8.0,7.31,0.0,0.0,0.0,0.69,0.0,0.0,257.0,210.0,0.0,0.0,0.0,47.0
+2024,8,OO,SkyWest Airlines Inc.,JFK,"New York, NY: John F. Kennedy International",310.0,85.0,46.65,15.2,23.15,0.0,0.0,22.0,1.0,7738.0,3718.0,1921.0,2099.0,0.0,0.0
+2024,8,YX,Republic Airline,JFK,"New York, NY: John F. Kennedy International",1440.0,277.0,61.55,21.07,136.0,0.0,58.38,129.0,6.0,21140.0,4219.0,3159.0,8305.0,0.0,5457.0
+2024,7,9E,Endeavor Air Inc.,JFK,"New York, NY: John F. Kennedy International",1605.0,415.0,98.05,11.11,136.71,0.0,169.13,147.0,4.0,43748.0,11380.0,1489.0,11363.0,0.0,19516.0
+2024,7,AA,American Airlines Network,JFK,"New York, NY: John F. Kennedy International",1167.0,341.0,85.66,16.63,109.48,1.68,127.55,24.0,8.0,36903.0,10232.0,1674.0,7475.0,55.0,17467.0
+2024,7,AS,Alaska Airlines Network,JFK,"New York, NY: John F. Kennedy International",372.0,138.0,19.77,3.75,82.11,0.0,32.36,1.0,0.0,7552.0,978.0,326.0,4395.0,0.0,1853.0
+2024,7,B6,JetBlue Airways,JFK,"New York, NY: John F. Kennedy International",3198.0,1016.0,305.78,18.31,285.38,0.08,406.46,73.0,17.0,94990.0,35325.0,1522.0,19613.0,5.0,38525.0
+2024,7,DL,Delta Air Lines Network,JFK,"New York, NY: John F. Kennedy International",2688.0,780.0,294.35,18.07,242.74,0.55,224.29,142.0,24.0,77694.0,40097.0,1016.0,14289.0,121.0,22171.0
+2024,7,F9,Frontier Airlines,JFK,"New York, NY: John F. Kennedy International",62.0,34.0,13.99,0.0,10.8,0.0,9.22,0.0,0.0,2894.0,1626.0,0.0,381.0,0.0,887.0
+2024,7,HA,Hawaiian Airlines Network,JFK,"New York, NY: John F. Kennedy International",31.0,14.0,13.09,0.0,0.0,0.91,0.0,0.0,0.0,486.0,415.0,0.0,0.0,71.0,0.0
+2024,7,OO,SkyWest Airlines Inc.,JFK,"New York, NY: John F. Kennedy International",310.0,88.0,51.28,13.67,22.84,0.21,0.0,7.0,2.0,8731.0,4808.0,1691.0,2212.0,20.0,0.0
+2024,7,YX,Republic Airline,JFK,"New York, NY: John F. Kennedy International",1434.0,347.0,74.7,15.94,170.76,0.39,85.21,43.0,2.0,28581.0,5892.0,1740.0,12886.0,33.0,8030.0
+2024,6,YX,Republic Airline,JFK,"New York, NY: John F. Kennedy International",1416.0,256.0,61.38,14.98,134.09,0.93,44.61,79.0,4.0,16857.0,3662.0,1658.0,7670.0,91.0,3776.0
+2024,6,HA,Hawaiian Airlines Network,JFK,"New York, NY: John F. Kennedy International",30.0,10.0,8.14,0.0,0.0,0.37,1.49,0.0,0.0,291.0,222.0,0.0,0.0,7.0,62.0
+2024,6,OO,SkyWest Airlines Inc.,JFK,"New York, NY: John F. Kennedy International",288.0,85.0,57.02,11.25,16.73,0.0,0.0,20.0,1.0,8895.0,5786.0,1315.0,1794.0,0.0,0.0
+2024,6,9E,Endeavor Air Inc.,JFK,"New York, NY: John F. Kennedy International",1516.0,321.0,76.2,10.69,123.82,0.0,110.29,105.0,3.0,25537.0,6439.0,1150.0,9079.0,0.0,8869.0
+2024,6,AA,American Airlines Network,JFK,"New York, NY: John F. Kennedy International",1135.0,347.0,96.92,17.22,117.93,0.29,114.64,28.0,13.0,38827.0,13526.0,2377.0,8623.0,14.0,14287.0
+2024,6,AS,Alaska Airlines Network,JFK,"New York, NY: John F. Kennedy International",348.0,99.0,23.5,9.95,42.27,0.0,23.28,2.0,1.0,7495.0,1285.0,1796.0,3419.0,0.0,995.0
+2024,6,B6,JetBlue Airways,JFK,"New York, NY: John F. Kennedy International",3091.0,915.0,282.67,15.95,275.64,1.52,339.22,112.0,27.0,92800.0,33264.0,2181.0,23776.0,76.0,33503.0
+2024,6,DL,Delta Air Lines Network,JFK,"New York, NY: John F. Kennedy International",2585.0,627.0,177.79,26.82,269.87,0.0,152.52,13.0,22.0,53643.0,20454.0,2968.0,18732.0,0.0,11489.0
+2024,6,F9,Frontier Airlines,JFK,"New York, NY: John F. Kennedy International",50.0,21.0,9.22,0.0,8.77,0.0,3.01,1.0,1.0,1405.0,456.0,0.0,603.0,0.0,346.0
+2024,5,HA,Hawaiian Airlines Network,JFK,"New York, NY: John F. Kennedy International",31.0,8.0,7.57,0.0,0.0,0.43,0.0,0.0,0.0,274.0,262.0,0.0,0.0,12.0,0.0
+2024,5,OO,SkyWest Airlines Inc.,JFK,"New York, NY: John F. Kennedy International",248.0,71.0,37.74,6.6,26.67,0.0,0.0,2.0,0.0,5795.0,2614.0,760.0,2421.0,0.0,0.0
+2024,5,YX,Republic Airline,JFK,"New York, NY: John F. Kennedy International",1400.0,222.0,55.84,8.75,113.44,1.0,42.97,19.0,2.0,16903.0,4012.0,1194.0,8078.0,75.0,3544.0
+2024,5,9E,Endeavor Air Inc.,JFK,"New York, NY: John F. Kennedy International",1504.0,248.0,47.67,15.28,99.42,0.99,84.65,27.0,1.0,24555.0,5331.0,2563.0,7919.0,68.0,8674.0
+2024,5,AA,American Airlines Network,JFK,"New York, NY: John F. Kennedy International",1229.0,349.0,120.51,11.36,83.0,0.09,134.04,14.0,5.0,34414.0,11362.0,1285.0,4393.0,6.0,17368.0
+2024,5,AS,Alaska Airlines Network,JFK,"New York, NY: John F. Kennedy International",341.0,104.0,23.13,1.0,46.37,0.33,33.16,2.0,1.0,4861.0,1353.0,32.0,1970.0,15.0,1491.0
+2024,5,B6,JetBlue Airways,JFK,"New York, NY: John F. Kennedy International",3191.0,800.0,269.32,10.42,217.11,1.67,301.47,30.0,13.0,66709.0,22236.0,1128.0,14256.0,53.0,29036.0
+2024,5,DL,Delta Air Lines Network,JFK,"New York, NY: John F. Kennedy International",2679.0,603.0,184.36,18.93,210.3,0.9,188.51,2.0,21.0,46531.0,20316.0,1653.0,10286.0,27.0,14249.0
+2024,4,9E,Endeavor Air Inc.,JFK,"New York, NY: John F. Kennedy International",1474.0,239.0,45.49,11.98,112.9,0.0,68.62,24.0,2.0,23515.0,5638.0,1058.0,9774.0,0.0,7045.0
+2024,4,OO,SkyWest Airlines Inc.,JFK,"New York, NY: John F. Kennedy International",201.0,50.0,34.51,5.29,10.2,0.0,0.0,1.0,1.0,2903.0,1845.0,450.0,608.0,0.0,0.0
+2024,4,AA,American Airlines Network,JFK,"New York, NY: John F. Kennedy International",1191.0,238.0,81.16,10.63,67.7,1.54,76.96,7.0,6.0,19965.0,7275.0,1691.0,3296.0,78.0,7625.0
+2024,4,HA,Hawaiian Airlines Network,JFK,"New York, NY: John F. Kennedy International",30.0,13.0,9.34,0.0,0.0,0.0,3.66,0.0,0.0,421.0,244.0,0.0,0.0,0.0,177.0
+2024,4,YX,Republic Airline,JFK,"New York, NY: John F. Kennedy International",1314.0,187.0,32.5,9.12,112.28,0.05,33.05,19.0,3.0,10549.0,2594.0,445.0,5132.0,3.0,2375.0
+2024,4,AS,Alaska Airlines Network,JFK,"New York, NY: John F. Kennedy International",329.0,79.0,17.16,1.59,32.58,0.12,27.55,0.0,3.0,4602.0,1064.0,215.0,1816.0,5.0,1502.0
+2024,4,B6,JetBlue Airways,JFK,"New York, NY: John F. Kennedy International",3074.0,660.0,207.67,5.06,160.98,1.0,285.29,51.0,11.0,56121.0,21834.0,406.0,9103.0,88.0,24690.0
+2024,4,DL,Delta Air Lines Network,JFK,"New York, NY: John F. Kennedy International",2540.0,509.0,182.99,11.09,194.51,1.0,119.41,7.0,3.0,45185.0,23256.0,2239.0,10342.0,36.0,9312.0
+2024,3,9E,Endeavor Air Inc.,JFK,"New York, NY: John F. Kennedy International",1471.0,224.0,57.07,8.84,94.33,0.79,62.97,3.0,3.0,18542.0,6655.0,673.0,6469.0,19.0,4726.0
+2024,3,HA,Hawaiian Airlines Network,JFK,"New York, NY: John F. Kennedy International",31.0,10.0,7.45,0.0,0.0,0.0,2.55,0.0,0.0,422.0,206.0,0.0,0.0,0.0,216.0
+2024,3,AA,American Airlines Network,JFK,"New York, NY: John F. Kennedy International",1274.0,334.0,95.37,13.69,123.51,2.09,99.34,9.0,5.0,31305.0,9754.0,1313.0,6551.0,63.0,13624.0
+2024,3,OO,SkyWest Airlines Inc.,JFK,"New York, NY: John F. Kennedy International",122.0,18.0,7.0,2.56,8.44,0.0,0.0,0.0,0.0,1289.0,390.0,269.0,630.0,0.0,0.0
+2024,3,AS,Alaska Airlines Network,JFK,"New York, NY: John F. Kennedy International",312.0,84.0,20.19,1.0,32.94,0.0,29.87,3.0,0.0,4313.0,1575.0,28.0,1393.0,0.0,1317.0
+2024,3,B6,JetBlue Airways,JFK,"New York, NY: John F. Kennedy International",3063.0,963.0,295.81,6.08,229.35,0.0,431.75,60.0,11.0,98360.0,32829.0,1919.0,13275.0,0.0,50337.0
+2024,3,DL,Delta Air Lines Network,JFK,"New York, NY: John F. Kennedy International",2500.0,475.0,164.64,17.07,190.81,1.0,101.48,2.0,12.0,29728.0,12409.0,1435.0,8244.0,53.0,7587.0
+2024,3,YX,Republic Airline,JFK,"New York, NY: John F. Kennedy International",1389.0,155.0,24.36,7.39,98.52,0.0,24.73,3.0,1.0,10116.0,1177.0,991.0,6049.0,0.0,1899.0
+2024,2,9E,Endeavor Air Inc.,JFK,"New York, NY: John F. Kennedy International",1410.0,167.0,29.83,6.91,62.05,0.0,68.21,23.0,1.0,12568.0,3381.0,760.0,2707.0,0.0,5720.0
+2024,2,DL,Delta Air Lines Network,JFK,"New York, NY: John F. Kennedy International",2214.0,340.0,132.2,7.68,123.93,2.97,73.22,17.0,10.0,24033.0,13545.0,1373.0,3649.0,204.0,5262.0
+2024,2,HA,Hawaiian Airlines Network,JFK,"New York, NY: John F. Kennedy International",29.0,6.0,3.63,0.0,1.0,0.0,1.37,1.0,0.0,278.0,211.0,0.0,18.0,0.0,49.0
+2024,2,YX,Republic Airline,JFK,"New York, NY: John F. Kennedy International",1232.0,99.0,27.68,3.99,45.08,0.0,22.26,15.0,2.0,4821.0,1476.0,286.0,1489.0,0.0,1570.0
+2024,2,AA,American Airlines Network,JFK,"New York, NY: John F. Kennedy International",1207.0,222.0,85.76,1.26,57.52,2.94,74.52,4.0,4.0,20237.0,8915.0,1149.0,1828.0,205.0,8140.0
+2024,2,AS,Alaska Airlines Network,JFK,"New York, NY: John F. Kennedy International",225.0,46.0,13.89,0.0,19.4,0.0,12.71,6.0,1.0,2340.0,1019.0,0.0,701.0,0.0,620.0
+2024,2,B6,JetBlue Airways,JFK,"New York, NY: John F. Kennedy International",2675.0,660.0,235.63,3.81,142.16,1.6,276.8,57.0,5.0,53042.0,21502.0,210.0,5343.0,38.0,25949.0
+2024,2,OO,SkyWest Airlines Inc.,JFK,"New York, NY: John F. Kennedy International",257.0,31.0,21.6,4.98,4.42,0.0,0.0,4.0,1.0,2057.0,995.0,755.0,307.0,0.0,0.0
+2024,1,9E,Endeavor Air Inc.,JFK,"New York, NY: John F. Kennedy International",1428.0,276.0,64.68,15.91,90.86,0.0,104.55,69.0,1.0,28959.0,8745.0,3167.0,7085.0,0.0,9962.0
+2024,1,AA,American Airlines Network,JFK,"New York, NY: John F. Kennedy International",1295.0,293.0,103.67,15.31,81.22,1.29,91.51,11.0,4.0,28803.0,12436.0,1852.0,3632.0,47.0,10836.0
+2024,1,YX,Republic Airline,JFK,"New York, NY: John F. Kennedy International",1195.0,179.0,45.35,12.74,71.83,0.69,48.39,44.0,0.0,12962.0,3964.0,1452.0,3724.0,27.0,3795.0
+2024,1,AS,Alaska Airlines Network,JFK,"New York, NY: John F. Kennedy International",239.0,41.0,9.64,3.59,15.76,0.0,12.0,85.0,1.0,2973.0,783.0,498.0,535.0,0.0,1157.0
+2024,1,B6,JetBlue Airways,JFK,"New York, NY: John F. Kennedy International",2690.0,747.0,250.25,11.78,187.99,0.0,296.98,48.0,9.0,64287.0,24736.0,1306.0,9543.0,0.0,28702.0
+2024,1,OO,SkyWest Airlines Inc.,JFK,"New York, NY: John F. Kennedy International",205.0,61.0,39.57,7.51,13.92,0.0,0.0,24.0,2.0,7345.0,5139.0,840.0,1366.0,0.0,0.0
+2024,1,DL,Delta Air Lines Network,JFK,"New York, NY: John F. Kennedy International",2384.0,458.0,161.89,18.24,161.74,0.0,116.13,7.0,13.0,33929.0,13591.0,4471.0,7616.0,0.0,8251.0
+2024,1,HA,Hawaiian Airlines Network,JFK,"New York, NY: John F. Kennedy International",31.0,9.0,7.0,0.0,0.0,0.0,2.0,0.0,0.0,319.0,251.0,0.0,0.0,0.0,68.0
