@@ -8,3 +8,14 @@ We are using old data records of airports to do this specifically airport record
 
 ## Data Visualization
 
+<img src="images/avg_jfktemp_2024.png" alt="My Image" width="1200">
+
+This line chart illustrates the average monthly temperature recorded at JFK Airport in 2024. It shows a typical seasonal pattern where temperatures peak in the summer months (July and August) and drop during the winter months (January and December).
+
+<img src="images/monthly_avg_precip_jfk2024.png" alt="My Image" width="1200">
+
+This bar chart shows the monthly average precipitation recorded at JFK Airport in 2024. April appears to have the highest level of precipitation, which could indicate a higher likelihood of weather-related delays during that month.
+
+<img src="images/weather_delays_jfk.png" alt="My Image" width="1200">
+
+This bar chart displays the total weather-related delay time (in minutes) at JFK per month in 2024. The data indicates that August experienced the highest number of delays, which may correlate with increased precipitation or extreme weather conditions during that time.
