@@ -1,10 +1,10 @@
 # CS506 Project: Airport Flight Delay Prediction Midterm Report
 
 ## Goal
-The ability to predict an airports's length of weather delay in minutes is what we hope our model will achieve. Using weather data like the amount of precipitation and the average temperature per month in that specific airports' location to help us train the model.
+Our goal is to create a model that can accurately predict an airports's length of delay in minutes caused by weather. Using weather data like the amount of precipitation and the average temperature per month in that specific airports' location to help us train the model.
 
 ## Data Cleaning
-We are using historical data records of airports to do this, specifically airport records from the year 2024. The dataset includes data from all 12 months within that year. We are only taking into consideration the flights that leave and arrive at JFK, filtering out all other airports. Additionally, we are only considering delays affected by weather to reduce the number of variables that need to be considered, as not all delays happen for the same reason. Some delays may occur due to security issues or other factors. Therefore, we have filtered out all non-weather-related delays from the total delays recorded at JFK.
+We are using airport data from the U.S. Bureau of Transportation Statistics. This data includes all airlines, airports in the United States, the type of delays, and cancellations every month in 2024. We are only taking into consideration the flights that leave and arrive at JFK, so we can filter out all airports except for JFK. We are also only considering delays caused by weather to lower the amount of variations that we need for the model to consider, as not all delays happen for the same reason. For example, some delays could happen due to security reasons. As a result, we would also filter out all other reasons of delay except weather out of the total number of delays in JFK.
 
 ## Data Visualization
 
