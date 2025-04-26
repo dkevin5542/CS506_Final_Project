@@ -1,8 +1,9 @@
-# testing.py
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import joblib
+import math
+from sklearn.metrics import mean_squared_error, mean_absolute_error
 
 # Load model and scaler
 model = joblib.load("../models/jfk_weather_model.pkl")
@@ -51,10 +52,10 @@ storm_df["BEGIN_DATE"] = pd.to_datetime(storm_df["BEGIN_DATE"], errors="coerce")
 storm_df["year"] = storm_df["BEGIN_DATE"].dt.year
 storm_df["month"] = storm_df["BEGIN_DATE"].dt.month
 relevant_types = ["Blizzard", "Coastal Flood", "Dense Fog", "Flash Flood", "Flood",
-                        "Hail", "Heavy Rain", "Heavy Snow", "High Wind", "Hurricane (Typhoon)",
-                        "Ice Storm", "Lightning", "Strong Wind", "Thunderstorm Wind", "Tornado",
-                        "Tropical Depression", "Tropical Storm", "Winter Storm", "Winter Weather",
-                        "Excessive Heat", "Extreme Cold/Wind Chill", "Storm Surge/Tide", "Wildfire"]
+                  "Hail", "Heavy Rain", "Heavy Snow", "High Wind", "Hurricane (Typhoon)",
+                  "Ice Storm", "Lightning", "Strong Wind", "Thunderstorm Wind", "Tornado",
+                  "Tropical Depression", "Tropical Storm", "Winter Storm", "Winter Weather",
+                  "Excessive Heat", "Extreme Cold/Wind Chill", "Storm Surge/Tide", "Wildfire"]
 storm_df = storm_df[storm_df["EVENT_TYPE"].isin(relevant_types)]
 storm_counts = storm_df.groupby(["year", "month"]).size().reset_index(name="storm_count")
 storm_counts["year"] = storm_counts["year"].astype(int)
@@ -90,13 +91,20 @@ comparison_df = pd.DataFrame({
 
 print(comparison_df)
 
+# --- Calculate Metrics ---
+rmse = math.sqrt(mean_squared_error(y_true, y_pred))
+mae = mean_absolute_error(y_true, y_pred)
+
+print(f"\nRoot Mean Squared Error (RMSE): {rmse:.2f}")
+print(f"Mean Absolute Error (MAE): {mae:.2f}")
+
 # --- Plot ---
 plt.figure(figsize=(14, 6))
 plt.plot(comparison_df["Month"], comparison_df["Actual_Delay"], marker="o", label="Actual Weather Delay", color="blue")
 plt.plot(comparison_df["Month"], comparison_df["Predicted_Delay"], marker="^", label="Predicted Weather Delay", color="red")
 plt.xlabel("Month")
 plt.ylabel("Delay (minutes)")
-plt.title("2024 JFK Weather Delay: Actual vs Predicted")
+plt.title(f"2024 JFK Weather Delay: Actual vs Predicted\nRMSE = {rmse:.2f}, MAE = {mae:.2f}")
 plt.legend()
 plt.grid(True)
 plt.show()
