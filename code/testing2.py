@@ -6,8 +6,8 @@ import math
 from sklearn.metrics import mean_squared_error, mean_absolute_error
 
 # Load model and scaler
-model = joblib.load("../models/jfk_weather_model.pkl")
-scaler = joblib.load("../models/jfk_scaler.pkl")
+model = joblib.load("../models/rf_weather_model.pkl")
+scaler = joblib.load("../models/rf_scaler.pkl")
 
 # --- Load 2024 weather delay data ---
 delay_df = pd.read_csv("../data/clean/JFK_Weather_Delay_Data.csv")
