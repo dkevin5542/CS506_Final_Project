@@ -1,3 +1,5 @@
+# testing.py
+
 import os
 import pandas as pd
 import numpy as np
@@ -7,7 +9,7 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error
 import math
 
 def test_model_on_airline_data(csv_path):
-    # Load CSV
+    # Load test CSV
     test_df = pd.read_csv(csv_path)
 
     # Aggregate total weather_delay by (year, month)
@@ -18,15 +20,13 @@ def test_model_on_airline_data(csv_path):
     monthly_weather_delay["precipitation"] = np.random.uniform(1.5, 5.5, size=len(monthly_weather_delay))
     monthly_weather_delay["storm_count"] = np.random.randint(1, 10, size=len(monthly_weather_delay))
 
-    # Load trained scaler and model using dynamic relative path
+    # Load trained model (Random Forest, no scaler needed)
     model_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "models"))
-    scaler = joblib.load(os.path.join(model_dir, "jfk_scaler.pkl"))
-    model = joblib.load(os.path.join(model_dir, "jfk_weather_model.pkl"))
+    model = joblib.load(os.path.join(model_dir, "jfk_weather_rf_model.pkl"))
 
     # Prepare features and predict
     X_test = monthly_weather_delay[["precipitation", "storm_count"]]
-    X_scaled = scaler.transform(X_test)
-    monthly_weather_delay["predicted_weather_delay"] = model.predict(X_scaled)
+    monthly_weather_delay["predicted_weather_delay"] = model.predict(X_test)
 
     return monthly_weather_delay
 
@@ -60,4 +60,5 @@ if __name__ == "__main__":
     plt.grid(True)
     plt.tight_layout()
     plt.show()
+
 
