@@ -1,5 +1,5 @@
 # Define the Python files
-TRAIN_SCRIPT=code/SVMTrainTestSplit.py
+TRAIN_SCRIPT=code/random_forest.py
 TEST_SCRIPT=code/testing.py
 
 VENV=venv
