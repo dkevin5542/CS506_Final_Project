@@ -113,7 +113,7 @@ def train_model():
     # model.fit(X_train_scaled, y_train)
     # predictions = model.predict(X_test_scaled)
 
-    model = RandomForestRegressor(max_depth=100)
+    model = RandomForestRegressor(max_depth=1000)
     model.fit(X_train_scaled, y_train)
     predictions = model.predict(X_test_scaled)
 
@@ -160,7 +160,7 @@ def train_model():
     ax.set_xlabel("Precipitation (inches)")
     ax.set_ylabel("Storm Count")
     ax.set_zlabel("Weather Delay (minutes)")
-    ax.set_title("LinearSVR: 3D Predicted vs True Weather Delay")
+    ax.set_title("3D Predicted vs True Weather Delay")
 
     # Legend and formatting
     ax.legend()
