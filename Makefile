@@ -1,6 +1,6 @@
 # Define the Python files
-TRAIN_SCRIPT=random_forest.py
-TEST_SCRIPT=testing.py
+TRAIN_SCRIPT=RFModel.py
+TEST_SCRIPT=testing2.py
 
 VENV=venv
 
