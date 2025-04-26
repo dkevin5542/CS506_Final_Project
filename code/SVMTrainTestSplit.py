@@ -76,7 +76,11 @@ def train_model():
     storm_df["month"] = storm_df["BEGIN_DATE"].dt.month
 
     # Filter for relevant storm types
-    relevant_types = ["High Wind", "Thunderstorm Wind", "Flash Flood", "Winter Weather", "Strong Wind", "Heavy Snow", "Hail"]
+    relevant_types = ["Blizzard", "Coastal Flood", "Dense Fog", "Flash Flood", "Flood",
+                        "Hail", "Heavy Rain", "Heavy Snow", "High Wind", "Hurricane (Typhoon)",
+                        "Ice Storm", "Lightning", "Strong Wind", "Thunderstorm Wind", "Tornado",
+                        "Tropical Depression", "Tropical Storm", "Winter Storm", "Winter Weather",
+                        "Excessive Heat", "Extreme Cold/Wind Chill", "Storm Surge/Tide", "Wildfire"]
     storm_df = storm_df[storm_df["EVENT_TYPE"].isin(relevant_types)]
 
     # Count storms per month
@@ -105,13 +109,13 @@ def train_model():
     X_test_scaled = scaler.transform(X_test)
 
 
-    model = KNeighborsRegressor(n_neighbors=3)  # 3, 5, or 7
-    model.fit(X_train_scaled, y_train)
-    predictions = model.predict(X_test_scaled)
-
-    # model = RandomForestRegressor(n_estimators=1000)
+    # model = KNeighborsRegressor(n_neighbors=3)  # 3, 5, or 7
     # model.fit(X_train_scaled, y_train)
     # predictions = model.predict(X_test_scaled)
+
+    model = RandomForestRegressor(max_depth=100)
+    model.fit(X_train_scaled, y_train)
+    predictions = model.predict(X_test_scaled)
 
 
     # # ----------- Visualize Results -----------
