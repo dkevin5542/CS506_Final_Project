@@ -7,6 +7,10 @@ from sklearn.svm import SVR
 from sklearn.ensemble import RandomForestRegressor
 import matplotlib.pyplot as plt
 from sklearn.model_selection import GridSearchCV
+import joblib
+import os
+
+
 
 
 def train_model():
@@ -138,7 +142,12 @@ def train_model():
     plt.show()
 
 
+    os.makedirs("../models", exist_ok=True)
+    joblib.dump(scaler, "../models/jfk_scaler.pkl")
+    joblib.dump(model, "../models/jfk_weather_model.pkl")
+
     return scaler, model
 
 # Run training
 train_model()
+
