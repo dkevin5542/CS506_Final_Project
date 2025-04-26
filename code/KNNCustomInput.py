@@ -4,6 +4,13 @@ from sklearn.neighbors import KNeighborsRegressor
 from sklearn.pipeline import make_pipeline
 import matplotlib.pyplot as plt
 
+## Todo: 1. Change the model to Linear Regression or SVM's
+#        2. Change the code so that it does train test split using our data and then in a different file
+#           create our own features manually and see how many minutes of delay per month we are going to have
+#        3. Change the data so that it imports the data instead of doing it manually
+#        4. Maybe create a front end so that when we input like avg temp or avg percipitation per month our
+#           model will return the average delay in JFK
+
 # Sample data
 weather_data = {
     'MONTH': ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
@@ -24,17 +31,23 @@ merged_df = pd.merge(weather_df, delay_df, on='MONTH')
 X = merged_df[['AVG_TEMP', 'PRECIPITATION']]
 y = merged_df['TOTAL_WEATHER_DELAY']
 
-pipeline = make_pipeline(StandardScaler(), KNeighborsRegressor(n_neighbors=3))
-pipeline.fit(X, y)
+# Standardize the features manually
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(X)
+
+# Train the KNN model
+model = KNeighborsRegressor(n_neighbors=3)
+model.fit(X_scaled, y)
 
 # Custom test inputs
 custom_inputs = pd.DataFrame({
     'AVG_TEMP': [40, 50, 60, 70, 80],
     'PRECIPITATION': [2.0, 3.0, 1.0, 4.0, 5.0]
 })
+custom_inputs_scaled = scaler.transform(custom_inputs)
 
 # Predict delays
-predictions = pipeline.predict(custom_inputs)
+predictions = model.predict(custom_inputs_scaled)
 
 # Print predictions
 print("\nCustom Predictions:")
