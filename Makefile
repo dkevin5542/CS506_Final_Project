@@ -1,6 +1,6 @@
 # Define the Python files
-TRAIN_SCRIPT=code/random_forest.py
-TEST_SCRIPT=code/testing.py
+TRAIN_SCRIPT=random_forest.py
+TEST_SCRIPT=testing.py
 
 VENV=venv
 
@@ -13,11 +13,11 @@ install:
 
 # Train the model
 train:
-	python $(TRAIN_SCRIPT)
+	cd code && python $(TRAIN_SCRIPT)
 
 # Test the model
 test:
-	python $(TEST_SCRIPT)
+	cd code && python $(TEST_SCRIPT)
 
 venv:
 	python -m venv $(VENV)
