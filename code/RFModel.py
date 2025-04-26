@@ -168,8 +168,8 @@ def train_model():
     plt.show()
 
     os.makedirs("../models", exist_ok=True)
-    joblib.dump(scaler, "../models/jfk_scaler.pkl")
-    joblib.dump(model, "../models/jfk_weather_model.pkl")
+    joblib.dump(scaler, "../models/rf_scaler.pkl")
+    joblib.dump(model, "../models/rf_weather_model.pkl")
 
     return scaler, model
 
