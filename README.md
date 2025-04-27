@@ -2,13 +2,20 @@
 
 
 ## Goal
-Our goal is to create a model that can accurately predict an airports' length of delay each month in minutes caused by weather. Using weather data like the amount of precipitation, the average temperature, and the storm count per month in that specific airports' location to help us train the model.
+Our goal is to create a model that can accurately predict an airports' total length of delay (in minutes) each month caused by weather. Using weather data like the amount of precipitation, the average temperature, and the storm count per month in that specific airports' location to help us train the model.
 
 ## Setup
-
+1. Clone the repository.
+2. In the root of the repository, install all the necessary dependencies using "make install".
+3. Train our model using "make train".
+4. Test and see the model's result using "make test".
 
 ## Data Cleaning
-We are using airport data from the U.S. Bureau of Transportation Statistics. This data includes all airlines, airports in the United States, the type of delays, and cancellations every month in 2024. We are only taking into consideration the flights that leave and arrive at JFK, so we can filter out all airports except for JFK. We are also only considering delays caused by weather to lower the amount of variations that we need for the model to consider, as not all delays happen for the same reason. For example, some delays could happen due to security reasons. As a result, we would also filter out all other reasons of delay except weather out of the total number of delays in JFK. 
+We are using airport data from the U.S. Bureau of Transportation Statistics. This data includes all airlines, airports in the United States, the type of delays, and cancellations every month from June 2003 to December 2024. We are only taking into consideration the flights that leave and arrive at JFK by filtering out all airports except JFK. Furthermore, we only considered delays caused by weather to decrease variations needed for our model to consider, as not all delays happen for the same reason. For example, some delays could happen due to security reasons. 
+
+Additionally, we are using weather data from 2003 to 2024 from the National Oceanic and Atmospheric Administration (NOAA) to account for various weather events that can cause weather delays in JFK. In specific, we took consideration of events such as thunderstorms, blizzards and strong winds as these events have a higher chance of impacting airport functions, while filtering out less impactful events such as rip currents.  
+
+Finally, we filtered out all airport and weather data from 2024 in our training model to ensure fair model evaluation, since we will be testing our model's flight delay prediction capability in 2024.
 
 ## Data Visualization
 
