@@ -1,5 +1,7 @@
 # CS506 Project: Airport Flight Delay Prediction Final Report
 
+## Final Report Video Link
+ [Midterm Report Video](https://youtu.be/3he1McIqA0c)
 
 ## Goal
 Our goal is to create a model that can accurately predict an airports' total length of delay (in minutes) each month caused by weather. Using weather data such as total monthly precipitation, and storm count per month in that specific airports' location to help us train the model.
