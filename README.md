@@ -1,40 +1,109 @@
-# CS506 Project: Airport Flight Delay Prediction Midterm Report
+# CS506 Project: Airport Flight Delay Prediction Final Report
 
-## Midterm Report Video Link
- [[Midterm Report Video]](https://youtu.be/H7OuvP91gSg)
 
 ## Goal
-Our goal is to create a model that can accurately predict an airports's length of delay in minutes caused by weather. Using weather data like the amount of precipitation and the average temperature per month in that specific airports' location to help us train the model.
+Our goal is to create a model that can accurately predict an airports' length of delay each month in minutes caused by weather. Using weather data like the amount of precipitation, the average temperature, and the storm count per month in that specific airports' location to help us train the model.
+
+## Setup
+
 
 ## Data Cleaning
-We are using airport data from the U.S. Bureau of Transportation Statistics. This data includes all airlines, airports in the United States, the type of delays, and cancellations every month in 2024. We are only taking into consideration the flights that leave and arrive at JFK, so we can filter out all airports except for JFK. We are also only considering delays caused by weather to lower the amount of variations that we need for the model to consider, as not all delays happen for the same reason. For example, some delays could happen due to security reasons. As a result, we would also filter out all other reasons of delay except weather out of the total number of delays in JFK.
+We are using airport data from the U.S. Bureau of Transportation Statistics. This data includes all airlines, airports in the United States, the type of delays, and cancellations every month in 2024. We are only taking into consideration the flights that leave and arrive at JFK, so we can filter out all airports except for JFK. We are also only considering delays caused by weather to lower the amount of variations that we need for the model to consider, as not all delays happen for the same reason. For example, some delays could happen due to security reasons. As a result, we would also filter out all other reasons of delay except weather out of the total number of delays in JFK. 
 
 ## Data Visualization
 
-### JFK Average Monthly Temperature 
-<img src="images/avg_jfktemp_2024.png" alt="jfk temp 2024" width="1200">
+### Monthly Weather Delays at JFK (2003–2024)
+<img src = "images/flight_delay21.png" alt = "jfk weather delay 2003-2024" width = "1200">
 
-This line chart illustrates the average monthly temperature recorded at JFK Airport in 2024. It shows a typical seasonal pattern where temperatures peak in the summer months (July and August) and drop during the winter months (January and December).
+This bar chart shows the total number of weather-related delay minutes at JFK Airport on a monthly basis from 2003 to 2024. 
+- Peaks in delays are observed around 2007–2008 and again in 2023–2024.
+- Notable spikes suggest extreme weather or possibly systemic disruptions during these periods.
+- There is significant month-to-month variability, reflecting the unpredictable nature of weather impacts on flight operations.
+
+---
+
+### Monthly Precipitation at JFK (2003–2024)
+<img src = "images/precip21.png" alt = "precip 2003-2024" width = "1200">
+
+This graph displays monthly total precipitation (in inches) at JFK from 2003 to 2024.
+- Most months experience 2–5 inches of rainfall.
+- Several extreme precipitation months are visible, particularly around 2005, 2011, and 2023.
+- Although some correlation with flight delays may be expected, precipitation alone does not fully explain delay patterns.
+
+---
+
+### Monthly Storm Events by Type in Queens (2003–2024)
+<img src = "images/storm_event.png" alt = "storm event 2003-2024" width = "1200">
+
+- **Thunderstorm Wind**, **Flash Flood**, and **Winter Weather** are among the most frequently recorded event types.
+- Some months, particularly during hurricane seasons or winters, show higher counts of events.
+- The diversity and intensity of storm types could help explain spikes in flight delays and disruptions in specific months.
+
+---
+These graphs collectively illustrate how varying weather patterns — including rainfall and storm events — have historically impacted flight delays at JFK. Significant variability year-over-year emphasizes the need for resilient scheduling and operational flexibility in aviation planning.
 
 
-### JFK Average Monthly Weather Delay 
-<img src="images/weather_delays_jfk.png" alt="jfk weather delay 2024" width="1200">
+### Random Forest Predictions
+<img src="images/random_forest_training.png" alt="random forest plot" width="1200">
 
-This bar chart displays the total weather-related delay time (in minutes) at JFK per month in 2024. The data indicates that August experienced the highest number of delays, which may correlate with increased precipitation or extreme weather conditions during that time.
+This 3D scatter plot visualizes the relationship between:
+- **Precipitation (x-axis)**
+- **Storm Event Count (y-axis)**
+- **Weather Delay in Minutes (z-axis)**
 
-### JFK Average Monthly Precipitation 
-<img src="images/new_precip.png" alt="jfk avg precip 2024" width="1200">
+Data points:
+- **Blue markers:** True delay values.
+- **Red markers:** Predicted delay values.
 
-This bar chart shows the monthly average precipitation recorded at JFK Airport in 2024. April appears to have the highest level of precipitation, which could indicate a higher likelihood of weather-related delays during that month.
+The scatter pattern shows the Random Forest model learning complex, non-linear interactions between precipitation, storm activity, and resulting flight delays. While predictions are close overall, the spread suggests variance in model accuracy at extreme values.
 
-### KNN Predictions 
-<img src="images/KNNCustom3DGraph.png" alt="knn plot" width="1200">
+If you want to access the interactive graph, you are going to need to run the 3d_rfmodel_weather_delay.html file in the images folder on a live server. The easiest way to do this is to use Vscode and install the live server extension. Then right-click the html file and click the option "Open with live server".
 
-This 3D scatter plot visualizes the K-Nearest Neighbors (KNN) predictions for weather-based flight delays. The blue points represent the training data, while the red triangles represent the predicted delay times based on given temperature and precipitation values. This visualization helps us see how weather conditions correlate with flight delays.
+---
+### 2024 JFK Weather Delay: Actual vs Predicted
+<img src="images/model_weather_delay_testing.png" alt="random forest plot vs testing" width="1200">
+
+This line plot compares the **actual** and **predicted** monthly total weather delays at JFK Airport for the year 2024.
+- **Blue line:** Actual recorded delay minutes.
+- **Red line:** Predicted delay minutes from the machine learning model.
+- **Performance Metrics:**
+  - **Root Mean Squared Error (RMSE):** 4895.62 minutes
+  - **Mean Absolute Error (MAE):** 4196.36 minutes
+- Overall, the model captures seasonal trends, although some months (e.g., January and August) show larger prediction errors.
 
 ## Data Modeling Methods
 We have explored multiple modeling approaches to predict weather-induced flight delays. Initially, we performed exploratory data analysis (EDA) to identify key patterns and correlations between weather conditions and delay times. Additionally, we implemented K-Nearest Neighbors (KNN) to leverage similarities in weather conditions for delay estimation. We are exploring more advanced machine learning models in future uses, such as decision trees and ensemble methods, to enhance predictive accuracy.
 
-## Preliminary Results
-Our preliminary results show promising trends in predicting weather-related delays. The KNN model performed better in detecting clusters of delays based on historical weather conditions. Moving forward, we aim to refine our models by incorporating additional features and optimizing hyperparameters to improve accuracy.
+## Improvement from the Midterm Report
+
+Since the midterm report, we made significant progress and expanded the project in several important ways:
+
+- **Expanded Feature Set:**  
+  In the midterm, we primarily used precipitation and temperature to predict flight delays. For the final report, we incorporated an additional feature: **storm event count** (e.g., thunderstorms, flash floods, winter storms). This allowed our models to better capture the intensity and variability of monthly weather patterns.
+
+- **Broader Data Range:**  
+  Initially, we only analyzed weather and delay data from 2024. In the final report, we expanded our dataset to include **historical data from 2003 to 2024**. This provided a much larger training set, helping improve model generalization and robustness.
+
+- **Advanced Modeling Techniques:**  
+  While the midterm report focused on K-Nearest Neighbors (KNN) for preliminary predictions, the final project introduced a **Random Forest Regressor**. Random Forest, being an ensemble method, allowed us to better model the complex, nonlinear relationships between weather features and flight delays, resulting in more accurate predictions.
+
+- **Performance Evaluation:**  
+  In the midterm report, model evaluation was primarily qualitative. For the final report, we quantitatively evaluated model performance using **Root Mean Squared Error (RMSE)** and **Mean Absolute Error (MAE)**. These metrics provided a clearer assessment of how well our model predicts delays.
+
+- **Interactive 3D Visualization:**  
+  We enhanced our visual analysis by creating an **interactive 3D plot** showing the relationship between precipitation, storm counts, and weather delays. This plot helped us (and future users) better understand the patterns the model learned.
+
+- **Improved Data Visualizations:**  
+  In addition to new modeling, we developed a richer set of visualizations:
+  - Weather delay trends over 20+ years
+  - Precipitation patterns
+  - Storm event types over time
+  - True vs predicted weather delays both in 2D (line graph) and 3D (scatter plot)
+
+Overall, we moved from a simple exploratory analysis to a more rigorous predictive modeling project with a broader feature set, better model performance, and more sophisticated visualizations.
+
+
+
+
+
 
