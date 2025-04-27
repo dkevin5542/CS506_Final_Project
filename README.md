@@ -86,10 +86,10 @@ We have explored multiple modeling approaches to predict weather-induced flight 
 Since the midterm report, we made significant progress and expanded the project in several important ways:
 
 - **Expanded Feature Set:**  
-  In the midterm, we primarily used precipitation and temperature to predict flight delays. For the final report, we incorporated an additional feature: **storm event count** (e.g., thunderstorms, flash floods, winter storms). This allowed our models to better capture the intensity and variability of monthly weather patterns.
+  In the midterm, we primarily used precipitation and temperature to predict flight delays. For the final report, we incorporated an additional feature: **storm event count** (e.g., thunderstorms, flash floods, winter storms), while removing average monthly temperature, since temperature has a less direct impact than storm events. This allowed our models to better capture the intensity and variability of monthly weather patterns.
 
 - **Broader Data Range:**  
-  Initially, we only analyzed weather and delay data from 2024. In the final report, we expanded our dataset to include **historical data from 2003 to 2024**. This provided a much larger training set, helping improve model generalization and robustness.
+  Initially, we only analyzed weather and delay data from 2024. In the final report, we expanded our dataset to include 5 years of data from 2019 to 2024 then a larger **historical data from 2003 to 2024**. This provided a much larger training set, helping improve model generalization and robustness.
 
 - **Advanced Modeling Techniques:**  
   While the midterm report focused on K-Nearest Neighbors (KNN) for preliminary predictions, the final project introduced a **Random Forest Regressor**. Random Forest, being an ensemble method, allowed us to better model the complex, nonlinear relationships between weather features and flight delays, resulting in more accurate predictions.
